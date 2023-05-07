@@ -86,107 +86,120 @@ public class Pelicula {
         this.actorPrincipal = actorPrincipal;
     }
 
+    @NonNull
     public Integer getIdPelicula() {
         return idPelicula;
     }
 
-    public void setIdPelicula(Integer idPelicula) {
+    public void setIdPelicula(@NonNull Integer idPelicula) {
         this.idPelicula = idPelicula;
     }
 
+    @NonNull
     public String getTitulo() {
         return titulo;
     }
 
-    public void setTitulo(String titulo) {
+    public void setTitulo(@NonNull String titulo) {
         this.titulo = titulo;
     }
 
+    @NonNull
     public Integer getAnho() {
         return anho;
     }
 
-    public void setAnho(Integer anho) {
+    public void setAnho(@NonNull Integer anho) {
         this.anho = anho;
     }
 
+    @Nullable
     public String getFechaVisionado() {
         return fechaVisionado;
     }
 
-    public void setFechaVisionado(String fechaVisionado) {
+    public void setFechaVisionado(@Nullable String fechaVisionado) {
         this.fechaVisionado = fechaVisionado;
     }
 
+    @Nullable
     public String getCiudadVisionado() {
         return ciudadVisionado;
     }
 
-    public void setCiudadVisionado(String ciudadVisionado) {
+    public void setCiudadVisionado(@Nullable String ciudadVisionado) {
         this.ciudadVisionado = ciudadVisionado;
     }
 
+    @Nullable
     public Integer getValoracion() {
         return valoracion;
     }
 
-    public void setValoracion(Integer valoracion) {
+    public void setValoracion(@Nullable Integer valoracion) {
         this.valoracion = valoracion;
     }
 
+    @NonNull
     public Integer getDuracion() {
         return duracion;
     }
 
-    public void setDuracion(Integer duracion) {
+    public void setDuracion(@NonNull Integer duracion) {
         this.duracion = duracion;
     }
 
+    @NonNull
     public String getPais() {
         return pais;
     }
 
-    public void setPais(String pais) {
+    public void setPais(@NonNull String pais) {
         this.pais = pais;
     }
 
+    @NonNull
     public String getDirectorPrincipal() {
         return directorPrincipal;
     }
 
-    public void setDirectorPrincipal(String directorPrincipal) {
+    public void setDirectorPrincipal(@NonNull String directorPrincipal) {
         this.directorPrincipal = directorPrincipal;
     }
 
+    @NonNull
     public String getGenero() {
         return genero;
     }
 
-    public void setGenero(String genero) {
+    public void setGenero(@NonNull String genero) {
         this.genero = genero;
     }
 
+    @NonNull
     public String getSinopsis() {
         return sinopsis;
     }
 
-    public void setSinopsis(String sinopsis) {
+    public void setSinopsis(@NonNull String sinopsis) {
         this.sinopsis = sinopsis;
     }
 
+    @Nullable
     public String getImagen() {
         return imagen;
     }
 
-    public void setImagen(String imagen) {
+    public void setImagen(@Nullable String imagen) {
         this.imagen = imagen;
     }
 
+    @NonNull
     public String getActorPrincipal() {
         return actorPrincipal;
     }
 
-    public void setActorPrincipal(String actorPrincipal) {
+    public void setActorPrincipal(@NonNull String actorPrincipal) {
         this.actorPrincipal = actorPrincipal;
     }
 
