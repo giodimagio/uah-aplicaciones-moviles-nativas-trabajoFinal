@@ -1,37 +1,76 @@
-package com.example.trabajofinal.model;
+package com.example.trabajofinal.domain.model;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
-import java.time.LocalDate;
-import java.util.List;
 import java.util.Objects;
 
+@Entity(tableName = "peliculasTabla")
 public class Pelicula {
 
+    @ColumnInfo(name = "uid")
+    @PrimaryKey(autoGenerate = true)
     public int uid;
 
+    @NonNull
+    @ColumnInfo(name = "idPelicula")
     private Integer idPelicula;
 
+    @NonNull
+    @ColumnInfo(name = "titulo")
     private String titulo;
+
+    @NonNull
+    @ColumnInfo(name = "anho")
     private Integer anho;
-    private LocalDate fechaVisionado;
+
+    @Nullable
+    @ColumnInfo(name = "fechaVisionado")
+    private String fechaVisionado;
+
+    @Nullable
+    @ColumnInfo(name = "ciudadVisionado")
     private String ciudadVisionado;
+
+    @Nullable
+    @ColumnInfo(name = "valoracion")
     private Integer valoracion;
+
+    @NonNull
+    @ColumnInfo(name = "duracion")
     private Integer duracion;
+
+    @NonNull
+    @ColumnInfo(name = "pais")
     private String pais;
+
+    @NonNull
+    @ColumnInfo(name = "directorPrincipal")
     private String directorPrincipal;
+
+    @NonNull
+    @ColumnInfo(name = "actorPrincipal")
+    private String actorPrincipal;
+
+    @NonNull
+    @ColumnInfo(name = "genero")
     private String genero;
+
+    @NonNull
+    @ColumnInfo(name = "sinopsis")
     private String sinopsis;
+
+    @Nullable
+    @ColumnInfo(name = "imagen")
     private String imagen;
-    private List<String> actorPrincipal;
 
-    public Pelicula() {
-    }
-
-    public Pelicula(Integer idPelicula, String titulo, Integer anho, LocalDate fechaVisionado,
-                    String ciudadVisionado, Integer valoracion, Integer duracion, String pais,
-                    String directorPrincipal, String genero, String sinopsis, String imagen,
-                    List<String> actorPrincipal) {
+    public Pelicula(@NonNull Integer idPelicula, @NonNull String titulo, @NonNull Integer anho, @Nullable String fechaVisionado,
+                    @Nullable String ciudadVisionado, @Nullable Integer valoracion, @NonNull Integer duracion, @NonNull String pais,
+                    @NonNull String directorPrincipal, @NonNull String genero, @NonNull String sinopsis, @Nullable String imagen,
+                    @NonNull String actorPrincipal) {
         this.idPelicula = idPelicula;
         this.titulo = titulo;
         this.anho = anho;
@@ -71,11 +110,11 @@ public class Pelicula {
         this.anho = anho;
     }
 
-    public LocalDate getFechaVisionado() {
+    public String getFechaVisionado() {
         return fechaVisionado;
     }
 
-    public void setFechaVisionado(LocalDate fechaVisionado) {
+    public void setFechaVisionado(String fechaVisionado) {
         this.fechaVisionado = fechaVisionado;
     }
 
@@ -143,11 +182,11 @@ public class Pelicula {
         this.imagen = imagen;
     }
 
-    public List<String> getActorPrincipal() {
+    public String getActorPrincipal() {
         return actorPrincipal;
     }
 
-    public void setActorPrincipal(List<String> actorPrincipal) {
+    public void setActorPrincipal(String actorPrincipal) {
         this.actorPrincipal = actorPrincipal;
     }
 
