@@ -14,8 +14,8 @@ import java.util.List;
 public interface IPeliculaDao {
 
     @Query("SELECT * FROM peliculasTabla")
-    LiveData<List<Pelicula>> obtenerListaDePeliculas();
+    LiveData<List<Pelicula>> obtenerListaDePeliculasEnDatabase();
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    void guardarPelicula(Pelicula pelicula);
+    void insertarPeliculaEnDatabase(Pelicula pelicula);
 }

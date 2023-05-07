@@ -24,7 +24,7 @@ public abstract class PeliculaDatabase extends RoomDatabase {
     private static final ExecutorService ejecutorDeEscrituraEnDatabase =
             Executors.newFixedThreadPool(NUM_HILOS);
 
-    public static ExecutorService obtenerEjecutorDeEscrituraEnBaseDeDatos() {
+    public static ExecutorService obtenerEjecutorDeEscrituraEnDatabase() {
         return ejecutorDeEscrituraEnDatabase;
     }
 
