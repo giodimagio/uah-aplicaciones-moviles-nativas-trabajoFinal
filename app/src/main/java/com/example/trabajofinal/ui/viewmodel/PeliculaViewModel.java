@@ -7,7 +7,7 @@ import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
 import com.example.trabajofinal.domain.model.Pelicula;
-import com.example.trabajofinal.data.repository.PeliculaRepository;
+import com.example.trabajofinal.domain.repository.PeliculaRepository;
 
 import java.util.List;
 

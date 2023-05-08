@@ -1,4 +1,4 @@
-package com.example.trabajofinal.data.repository;
+package com.example.trabajofinal.domain.repository;
 
 import android.content.Context;
 
