@@ -1,4 +1,4 @@
-package com.example.trabajofinal;
+package com.uah.trabajofinal;
 
 import org.junit.Test;
 

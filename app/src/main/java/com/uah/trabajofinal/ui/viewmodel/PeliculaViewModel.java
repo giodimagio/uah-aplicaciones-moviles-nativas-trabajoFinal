@@ -1,4 +1,4 @@
-package com.example.trabajofinal.ui.viewmodel;
+package com.uah.trabajofinal.ui.viewmodel;
 
 import android.app.Application;
 
@@ -6,8 +6,8 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
-import com.example.trabajofinal.domain.model.Pelicula;
-import com.example.trabajofinal.domain.repository.PeliculaRepository;
+import com.uah.trabajofinal.domain.model.Pelicula;
+import com.uah.trabajofinal.data.repository.PeliculaRepository;
 
 import java.util.List;
 

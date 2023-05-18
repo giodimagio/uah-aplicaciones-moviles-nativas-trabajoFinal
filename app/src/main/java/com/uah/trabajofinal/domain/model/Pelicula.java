@@ -1,4 +1,4 @@
-package com.example.trabajofinal.domain.model;
+package com.uah.trabajofinal.domain.model;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -24,8 +24,8 @@ public class Pelicula {
     private String titulo;
 
     @NonNull
-    @ColumnInfo(name = "anho")
-    private Integer anho;
+    @ColumnInfo(name = "anio")
+    private Integer anio;
 
     @Nullable
     @ColumnInfo(name = "fechaVisionado")
@@ -67,13 +67,13 @@ public class Pelicula {
     @ColumnInfo(name = "imagen")
     private String imagen;
 
-    public Pelicula(@NonNull Integer idPelicula, @NonNull String titulo, @NonNull Integer anho, @Nullable String fechaVisionado,
+    public Pelicula(@NonNull Integer idPelicula, @NonNull String titulo, @NonNull Integer anio, @Nullable String fechaVisionado,
                     @Nullable String ciudadVisionado, @Nullable Integer valoracion, @NonNull Integer duracion, @NonNull String pais,
                     @NonNull String directorPrincipal, @NonNull String genero, @NonNull String sinopsis, @Nullable String imagen,
                     @NonNull String actorPrincipal) {
         this.idPelicula = idPelicula;
         this.titulo = titulo;
-        this.anho = anho;
+        this.anio = anio;
         this.fechaVisionado = fechaVisionado;
         this.ciudadVisionado = ciudadVisionado;
         this.valoracion = valoracion;
@@ -105,12 +105,12 @@ public class Pelicula {
     }
 
     @NonNull
-    public Integer getAnho() {
-        return anho;
+    public Integer getAnio() {
+        return anio;
     }
 
-    public void setAnho(@NonNull Integer anho) {
-        this.anho = anho;
+    public void setAnio(@NonNull Integer anio) {
+        this.anio = anio;
     }
 
     @Nullable
@@ -222,7 +222,7 @@ public class Pelicula {
         return "Pelicula{" +
                 "idPelicula=" + idPelicula +
                 ", titulo='" + titulo + '\'' +
-                ", año=" + anho +
+                ", anio=" + anio +
                 ", fechaVisionado=" + fechaVisionado +
                 ", ciudadVisionado='" + ciudadVisionado + '\'' +
                 ", valoracion=" + valoracion +

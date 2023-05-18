@@ -1,5 +1,5 @@
 DELETE FROM peliculasTabla;
-INSERT INTO peliculasTabla (idPelicula, titulo, anho, fechaVisionado, ciudadVisionado, valoracion, duracion, pais, directorPrincipal, genero, sinopsis, imagen, actorPrincipal)
+INSERT INTO peliculasTabla (idPelicula, titulo, anio, fechaVisionado, ciudadVisionado, valoracion, duracion, pais, directorPrincipal, genero, sinopsis, imagen, actorPrincipal)
 VALUES (1, 'Prueba1', 1991, '2019-04-03', 'Madrid', 5, '120', 'SPA', 'Manolo', 'Terror', 'Pruébala', 'IMAGEN_PNG1', 'Rigoberto'),
        (2, 'Prueba2', 1992, '2020-04-03', 'Vigo', 6, '180', 'ENG', 'Paco', 'Thriller', 'Mírala', 'IMAGEN_PNG2', 'Gumersinda'),
        (3, 'Prueba3', 1993, '2021-05-01', 'Barcelona', 7, '150', 'ITA', 'Lucía', 'Drama', 'Mira esto', 'IMAGEN_PNG3', 'Mariano'),

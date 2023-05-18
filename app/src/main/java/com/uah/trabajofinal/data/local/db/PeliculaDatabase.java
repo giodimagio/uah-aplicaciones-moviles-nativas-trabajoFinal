@@ -1,4 +1,4 @@
-package com.example.trabajofinal.data.local.db;
+package com.uah.trabajofinal.data.local.db;
 
 import android.content.Context;
 
@@ -6,8 +6,8 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-import com.example.trabajofinal.data.local.dao.IPeliculaDao;
-import com.example.trabajofinal.domain.model.Pelicula;
+import com.uah.trabajofinal.data.local.dao.IPeliculaDao;
+import com.uah.trabajofinal.domain.model.Pelicula;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

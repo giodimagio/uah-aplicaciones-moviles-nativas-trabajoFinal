@@ -1,4 +1,4 @@
-package com.example.trabajofinal.data.local.dao;
+package com.uah.trabajofinal.data.local.dao;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
@@ -6,7 +6,7 @@ import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 
-import com.example.trabajofinal.domain.model.Pelicula;
+import com.uah.trabajofinal.domain.model.Pelicula;
 
 import java.util.List;
 

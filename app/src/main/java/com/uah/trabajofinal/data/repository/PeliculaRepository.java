@@ -1,12 +1,12 @@
-package com.example.trabajofinal.domain.repository;
+package com.uah.trabajofinal.data.repository;
 
 import android.content.Context;
 
 import androidx.lifecycle.LiveData;
 
-import com.example.trabajofinal.data.local.dao.IPeliculaDao;
-import com.example.trabajofinal.data.local.db.PeliculaDatabase;
-import com.example.trabajofinal.domain.model.Pelicula;
+import com.uah.trabajofinal.data.local.dao.IPeliculaDao;
+import com.uah.trabajofinal.data.local.db.PeliculaDatabase;
+import com.uah.trabajofinal.domain.model.Pelicula;
 
 import java.util.List;
 
