@@ -5,7 +5,8 @@
     <string name="peliculaCardAnioTextPlaceholder">Año de la Película</string>
     <string name="peliculaCardDuracionTextPlaceholder">Duración de la Película</string>
     <string name="peliculaCardActorPrincipalTextPlaceholder">Actor Principal de la Película</string>
-    <string name="peliculaCardDescripcionTextPlaceholder">Descripción de la Película</string>
+    <string name="peliculaCardSinopsisTextPlaceholder">Sinopsis de la Película</string>
+    <string name="peliculaCardCoverImageTextPlaceholder">Imagen tipo Cover de la Película</string>
     <string name="botonAccion1">Acción 1</string>
     <string name="botonAccion2">Acción 2</string>
 </resources>
