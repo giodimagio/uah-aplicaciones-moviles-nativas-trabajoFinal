@@ -20,7 +20,7 @@ public class PeliculaRepository {
         listaPeliculas = peliculaDao.obtenerListaDePeliculasEnDatabase();
     }
 
-    public LiveData<List<Pelicula>> obtenerListadoDePeliculas() {
+    public LiveData<List<Pelicula>> obtenerListaDePeliculas() {
         return listaPeliculas;
     }
 

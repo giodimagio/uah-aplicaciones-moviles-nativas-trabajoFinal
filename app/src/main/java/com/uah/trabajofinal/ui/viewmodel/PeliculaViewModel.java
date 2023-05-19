@@ -14,15 +14,14 @@ import java.util.List;
 public class PeliculaViewModel extends AndroidViewModel {
 
     private final LiveData<List<Pelicula>> listaPeliculas;
-    private final PeliculaRepository peliculaRepository;
 
     public PeliculaViewModel(@NonNull Application application) {
         super(application);
-        peliculaRepository = new PeliculaRepository(application);
-        listaPeliculas = peliculaRepository.obtenerListadoDePeliculas();
+        PeliculaRepository peliculaRepository = new PeliculaRepository(application);
+        listaPeliculas = peliculaRepository.obtenerListaDePeliculas();
     }
 
-    public LiveData<List< Pelicula>> obtenerTodasLasPeliculas() {
+    public LiveData<List<Pelicula>> obtenerTodasLasPeliculas() {
         return listaPeliculas;
     }
 
