@@ -28,6 +28,8 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.3"
+                android:text="@string/peliculaCardCoverImageTextPlaceholder"
+                android:textSize="18sp"
                 android:scaleType="centerCrop" />
 
             <LinearLayout
@@ -68,10 +70,10 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/peliculaCardDescripcionText"
+                    android:id="@+id/peliculaCardSinopsisText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/peliculaCardDescripcionTextPlaceholder"
+                    android:text="@string/peliculaCardSinopsisTextPlaceholder"
                     android:textSize="12sp" />
 
             </LinearLayout>
