@@ -1,4 +1,3 @@
-DELETE FROM peliculasTabla;
 INSERT INTO peliculasTabla (idPelicula, titulo, anio, fechaVisionado, ciudadVisionado, valoracion, duracion, pais, directorPrincipal, genero, sinopsis, imagen, actorPrincipal)
 VALUES (1, 'Prueba1', 1991, '2019-04-03', 'Madrid', 5, '120', 'SPA', 'Manolo', 'Terror', 'Pruébala', 'IMAGEN_PNG1', 'Rigoberto'),
        (2, 'Prueba2', 1992, '2020-04-03', 'Vigo', 6, '180', 'ENG', 'Paco', 'Thriller', 'Mírala', 'IMAGEN_PNG2', 'Gumersinda'),
@@ -9,4 +8,14 @@ VALUES (1, 'Prueba1', 1991, '2019-04-03', 'Madrid', 5, '120', 'SPA', 'Manolo', '
        (7, 'Prueba7', 1997, '2021-09-01', 'Málaga', 8, '170', 'AUS', 'Marta', 'Acción', 'Algo nuevo', 'IMAGEN_PNG7', 'Juan'),
        (8, 'Prueba8', 1998, '2021-10-01', 'Bilbao', 6, '190', 'MEX', 'Sara', 'Romance', 'Prueba final', 'IMAGEN_PNG8', 'Lucía'),
        (9, 'Prueba9', 1999, '2021-11-01', 'Cádiz', 5, '160', 'CAN', 'Alba', 'Drama', 'Mira otra', 'IMAGEN_PNG9', 'Manuel'),
-       (10, 'Prueba10', 2000, '2021-12-01', 'Toledo', 7, '200', 'JPN', 'Mario', 'Thriller', 'La última', 'IMAGEN_PNG10', 'Natalia');
+       (10, 'Prueba10', 2000, '2021-12-01', 'Toledo', 7, '200', 'JPN', 'Mario', 'Thriller', 'La última', 'IMAGEN_PNG10', 'Natalia'),
+       (11, 'Prueba11', 2001, '2022-01-01', 'Granada', 9, '170', 'RUS', 'Lola', 'Comedia', 'Divertida', 'IMAGEN_PNG11', 'Pedro'),
+       (12, 'Prueba12', 2002, '2022-02-01', 'Salamanca', 8, '150', 'BRA', 'Hugo', 'Drama', 'Emocionante', 'IMAGEN_PNG12', 'Marta'),
+       (13, 'Prueba13', 2003, '2022-03-01', 'Murcia', 6, '130', 'ARG', 'Julia', 'Romance', 'Romántica', 'IMAGEN_PNG13', 'Antonio'),
+       (14, 'Prueba14', 2004, '2022-04-01', 'León', 7, '140', 'GER', 'Carlos', 'Acción', 'Llena de acción', 'IMAGEN_PNG14', 'Elena'),
+       (15, 'Prueba15', 2005, '2022-05-01', 'Pamplona', 8, '110', 'IND', 'Laura', 'Aventura', 'Aventurera', 'IMAGEN_PNG15', 'Francisco'),
+       (16, 'Prueba16', 2006, '2022-06-01', 'Valladolid', 9, '120', 'FRA', 'María', 'Drama', 'Impactante', 'IMAGEN_PNG16', 'Daniel'),
+       (17, 'Prueba17', 2007, '2022-07-01', 'Alicante', 8, '140', 'USA', 'Pedro', 'Comedia', 'Divertida', 'IMAGEN_PNG17', 'Carmen'),
+       (18, 'Prueba18', 2008, '2022-08-01', 'Santander', 7, '130', 'ITA', 'Isabel', 'Romance', 'Romántica', 'IMAGEN_PNG18', 'Andrés'),
+       (19, 'Prueba19', 2009, '2022-09-01', 'Córdoba', 6, '150', 'ENG', 'Luisa', 'Acción', 'Llena de acción', 'IMAGEN_PNG19', 'Miguel'),
+       (20, 'Prueba20', 2010, '2022-10-01', 'Zamora', 5, '160', 'ESP', 'Javier', 'Aventura', 'Aventurera', 'IMAGEN_PNG20', 'Laura');
