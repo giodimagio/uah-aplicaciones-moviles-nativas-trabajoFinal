@@ -7,6 +7,9 @@
     <string name="peliculaCardActorPrincipalTextPlaceholder">Actor Principal de la Película</string>
     <string name="peliculaCardSinopsisTextPlaceholder">Sinopsis de la Película</string>
     <string name="peliculaCardCoverImageTextPlaceholder">Imagen tipo Cover de la Película</string>
-    <string name="botonAccion1">Acción 1</string>
-    <string name="botonAccion2">Acción 2</string>
+    <string name="peliculaCardMaterialButton1Text">Guardar Pelicula</string>
+    <string name="peliculaCardMaterialButton2Text">Borrar Pelicula</string>
+    <string name="menuInferiorNavegacionElemento1Text">Películas vistas</string>
+    <string name="menuInferiorNavegacionElemento2Text">Guardar película</string>
+    <string name="menuInferiorNavegacionElemento3Text">Salir</string>
 </resources>
