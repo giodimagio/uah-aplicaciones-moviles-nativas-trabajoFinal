@@ -2,10 +2,10 @@ package com.uah.trabajofinal.data.local.dao;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
+import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
-import androidx.room.RoomDatabase;
 
 import com.uah.trabajofinal.domain.model.Pelicula;
 
@@ -38,4 +38,12 @@ public interface IPeliculaDao {
      */
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insertarPeliculaEnDatabase(Pelicula pelicula);
+
+    /**
+     * @descripcion Borra una película de la base de datos local.
+     * @param pelicula El objeto película a borrar.
+     * @see Delete
+     */
+    @Delete
+    void borrarPeliculaDeDatabase(Pelicula pelicula);
 }
