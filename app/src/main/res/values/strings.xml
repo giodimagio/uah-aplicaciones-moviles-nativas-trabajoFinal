@@ -9,7 +9,7 @@
     <string name="peliculaCardCoverImageTextPlaceholder">Imagen tipo Cover de la Película</string>
     <string name="peliculaCardMaterialButton1Text">Guardar Pelicula</string>
     <string name="peliculaCardMaterialButton2Text">Borrar Pelicula</string>
-    <string name="menuInferiorNavegacionElemento1Text">Películas vistas</string>
-    <string name="menuInferiorNavegacionElemento2Text">Guardar película</string>
+    <string name="menuInferiorNavegacionElemento1Text">Home</string>
+    <string name="menuInferiorNavegacionElemento2Text">Buscar película</string>
     <string name="menuInferiorNavegacionElemento3Text">Salir</string>
 </resources>
