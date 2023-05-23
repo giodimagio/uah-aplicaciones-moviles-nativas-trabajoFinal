@@ -15,15 +15,15 @@ public class Pelicula {
     @PrimaryKey(autoGenerate = true)
     public int uid;
 
-    @NonNull
+    @Nullable
     @ColumnInfo(name = "idPelicula")
     private Integer idPelicula;
 
-    @NonNull
+    @Nullable
     @ColumnInfo(name = "titulo")
     private String titulo;
 
-    @NonNull
+    @Nullable
     @ColumnInfo(name = "anio")
     private Integer anio;
 
@@ -39,27 +39,27 @@ public class Pelicula {
     @ColumnInfo(name = "valoracion")
     private Integer valoracion;
 
-    @NonNull
+    @Nullable
     @ColumnInfo(name = "duracion")
     private Integer duracion;
 
-    @NonNull
+    @Nullable
     @ColumnInfo(name = "pais")
     private String pais;
 
-    @NonNull
+    @Nullable
     @ColumnInfo(name = "directorPrincipal")
     private String directorPrincipal;
 
-    @NonNull
+    @Nullable
     @ColumnInfo(name = "actorPrincipal")
     private String actorPrincipal;
 
-    @NonNull
+    @Nullable
     @ColumnInfo(name = "genero")
     private String genero;
 
-    @NonNull
+    @Nullable
     @ColumnInfo(name = "sinopsis")
     private String sinopsis;
 
@@ -67,10 +67,12 @@ public class Pelicula {
     @ColumnInfo(name = "imagen")
     private String imagen;
 
-    public Pelicula(@NonNull Integer idPelicula, @NonNull String titulo, @NonNull Integer anio, @Nullable String fechaVisionado,
-                    @Nullable String ciudadVisionado, @Nullable Integer valoracion, @NonNull Integer duracion, @NonNull String pais,
-                    @NonNull String directorPrincipal, @NonNull String genero, @NonNull String sinopsis, @Nullable String imagen,
-                    @NonNull String actorPrincipal) {
+    public Pelicula() {}
+
+    public Pelicula(@Nullable Integer idPelicula, @Nullable String titulo, @Nullable Integer anio, @Nullable String fechaVisionado,
+                    @Nullable String ciudadVisionado, @Nullable Integer valoracion, @Nullable Integer duracion, @Nullable String pais,
+                    @Nullable String directorPrincipal, @Nullable String genero, @Nullable String sinopsis, @Nullable String imagen,
+                    @Nullable String actorPrincipal) {
         this.idPelicula = idPelicula;
         this.titulo = titulo;
         this.anio = anio;
@@ -86,30 +88,30 @@ public class Pelicula {
         this.actorPrincipal = actorPrincipal;
     }
 
-    @NonNull
+    @Nullable
     public Integer getIdPelicula() {
         return idPelicula;
     }
 
-    public void setIdPelicula(@NonNull Integer idPelicula) {
+    public void setIdPelicula(@Nullable Integer idPelicula) {
         this.idPelicula = idPelicula;
     }
 
-    @NonNull
+    @Nullable
     public String getTitulo() {
         return titulo;
     }
 
-    public void setTitulo(@NonNull String titulo) {
+    public void setTitulo(@Nullable String titulo) {
         this.titulo = titulo;
     }
 
-    @NonNull
+    @Nullable
     public Integer getAnio() {
         return anio;
     }
 
-    public void setAnio(@NonNull Integer anio) {
+    public void setAnio(@Nullable Integer anio) {
         this.anio = anio;
     }
 
@@ -140,48 +142,48 @@ public class Pelicula {
         this.valoracion = valoracion;
     }
 
-    @NonNull
+    @Nullable
     public Integer getDuracion() {
         return duracion;
     }
 
-    public void setDuracion(@NonNull Integer duracion) {
+    public void setDuracion(@Nullable Integer duracion) {
         this.duracion = duracion;
     }
 
-    @NonNull
+    @Nullable
     public String getPais() {
         return pais;
     }
 
-    public void setPais(@NonNull String pais) {
+    public void setPais(@Nullable String pais) {
         this.pais = pais;
     }
 
-    @NonNull
+    @Nullable
     public String getDirectorPrincipal() {
         return directorPrincipal;
     }
 
-    public void setDirectorPrincipal(@NonNull String directorPrincipal) {
+    public void setDirectorPrincipal(@Nullable String directorPrincipal) {
         this.directorPrincipal = directorPrincipal;
     }
 
-    @NonNull
+    @Nullable
     public String getGenero() {
         return genero;
     }
 
-    public void setGenero(@NonNull String genero) {
+    public void setGenero(@Nullable String genero) {
         this.genero = genero;
     }
 
-    @NonNull
+    @Nullable
     public String getSinopsis() {
         return sinopsis;
     }
 
-    public void setSinopsis(@NonNull String sinopsis) {
+    public void setSinopsis(@Nullable String sinopsis) {
         this.sinopsis = sinopsis;
     }
 
@@ -194,12 +196,12 @@ public class Pelicula {
         this.imagen = imagen;
     }
 
-    @NonNull
+    @Nullable
     public String getActorPrincipal() {
         return actorPrincipal;
     }
 
-    public void setActorPrincipal(@NonNull String actorPrincipal) {
+    public void setActorPrincipal(@Nullable String actorPrincipal) {
         this.actorPrincipal = actorPrincipal;
     }
 
