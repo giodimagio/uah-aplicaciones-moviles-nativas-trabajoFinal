@@ -2,13 +2,16 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/barraBusquedaFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <androidx.core.widget.NestedScrollView
+        android:id="@+id/barraBusquedaNestedScrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:contentDescription="@string/barraBusquedaNestedScrollViewHint"
         app:layout_behavior="@string/searchbar_scrolling_view_behavior">
 
     </androidx.core.widget.NestedScrollView>
@@ -18,17 +21,26 @@
         android:layout_height="wrap_content">
 
         <com.google.android.material.search.SearchBar
-            android:id="@+id/search_bar"
+            android:id="@+id/barraBusquedaSearchBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="barraDeBusquedaHint" />
+            android:hint="@string/barraDeBusquedaHint" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/barraBusquedaFragmentContainerView"
+            android:name="com.uah.trabajofinal.ui.fragment.PeliculaCardFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/fragment_pelicula_card" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <com.google.android.material.search.SearchView
+        android:id="@+id/barraBusquedaSearchView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:hint="barraDeBusquedaHint"
-        app:layout_anchor="@id/search_bar">
+        android:hint="@string/barraDeBusquedaHint"
+        app:layout_anchor="@id/barraBusquedaSearchBar">
 
     </com.google.android.material.search.SearchView>
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
