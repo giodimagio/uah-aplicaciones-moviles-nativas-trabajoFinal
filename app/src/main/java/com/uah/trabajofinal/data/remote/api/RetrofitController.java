@@ -29,8 +29,8 @@ public class RetrofitController implements Callback<PeliculaApiResponse> {
         apiClient = retrofit.create(IOMDbApiClient.class);
     }
 
-    public void start() {
-        Call<PeliculaApiResponse> call = apiClient.getPeliculaByTitle("Gladiator", API_KEY);
+    public void busquedaPorTitulo(String titulo) {
+        Call<PeliculaApiResponse> call = apiClient.getPeliculaByTitle(titulo, API_KEY);
         call.enqueue(this);
     }
 
@@ -40,6 +40,13 @@ public class RetrofitController implements Callback<PeliculaApiResponse> {
             if (response.body() != null) {
                 PeliculaApiResponse pelicula = new PeliculaApiResponse();
                 pelicula.setTitle(response.body().getTitle());
+                pelicula.setYear(response.body().getYear());
+                pelicula.setRuntime(response.body().getRuntime());
+                pelicula.setCountry(response.body().getCountry());
+                pelicula.setDirector(response.body().getDirector());
+                pelicula.setActors(response.body().getActors());
+                pelicula.setPlot(response.body().getPlot());
+                pelicula.setPoster(response.body().getPoster());
                 logger.i("Retrofit2 - onSuccessfulResponse: " + pelicula);
             }
         } else {
