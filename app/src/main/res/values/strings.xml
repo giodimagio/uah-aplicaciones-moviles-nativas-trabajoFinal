@@ -12,4 +12,6 @@
     <string name="menuInferiorNavegacionElemento1Text">Home</string>
     <string name="menuInferiorNavegacionElemento2Text">Buscar película</string>
     <string name="menuInferiorNavegacionElemento3Text">Salir</string>
+    <string name="barraDeBusquedaHint">Busca la película que has visto...</string>
+    <string name="barraBusquedaNestedScrollViewHint">Nested Scroll</string>
 </resources>
