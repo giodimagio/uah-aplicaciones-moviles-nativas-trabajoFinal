@@ -14,12 +14,29 @@ import com.google.android.material.search.SearchView;
 import com.uah.trabajofinal.R;
 import com.uah.trabajofinal.data.remote.api.RetrofitController;
 
+/**
+ * @author Jorge Romero
+ *
+ * @clase BarraBusquedaFragment
+ * @descripcion Fragmento que contiene la barra de búsqueda de películas
+ * @see Fragment
+ */
 public class BarraBusquedaFragment extends Fragment {
 
+    /**
+     * Atributos privados de la clase
+     */
     private SearchView barraBusquedaView;
     private RetrofitController controller;
     private PeliculaCardFragment peliculaCardFragment;
 
+    /**
+     * @descripcion Método que se ejecuta al crear la vista del fragmento
+     * @param inflater El LayoutInflater que se usa para inflar la vista
+     * @param container El ViewGroup al que se adjuntará la vista
+     * @param savedInstanceState Bundle que contiene el estado previamente guardado de la actividad
+     * @return view La vista que se ha creado
+     */
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -33,6 +50,9 @@ public class BarraBusquedaFragment extends Fragment {
         return view;
     }
 
+    /**
+     * @descripcion Método para la búsqueda de películas con Retrofit desde la barra de búsqueda
+     */
     private void buscarPeliculaDesdeBarraDeBusqueda() {
         barraBusquedaView.getEditText().setOnEditorActionListener(
                 (view, actionId, event) -> {
@@ -41,7 +61,7 @@ public class BarraBusquedaFragment extends Fragment {
                     if (actionId == EditorInfo.IME_ACTION_SEARCH) {
                         controller = new RetrofitController();
                         controller.busquedaPorTitulo(String.valueOf(barraBusquedaView.getText()));
-                        peliculaCardFragment.mostrarPeliculaEncontrada("Gladiatoooooor");
+                        peliculaCardFragment.mostrarPeliculaEncontrada("Gladiator");
                     }
                     return false;
                 });
