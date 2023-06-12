@@ -8,6 +8,12 @@ import androidx.room.PrimaryKey;
 
 import java.util.Objects;
 
+/**
+ * @author Jorge Romero
+ *
+ * @clase Pelicula
+ * @descripcion Clase entidad que representa la entidad de Pelicula
+ */
 @Entity(tableName = "peliculasTabla")
 public class Pelicula {
 
