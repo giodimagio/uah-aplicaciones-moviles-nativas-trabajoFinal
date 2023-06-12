@@ -4,27 +4,35 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
-import androidx.navigation.NavDestination;
-import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
 
-import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.Toast;
 
-import com.google.android.material.bottomnavigation.BottomNavigationItemView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.uah.trabajofinal.R;
-import com.uah.trabajofinal.data.repository.PeliculaRepository;
 import com.uah.trabajofinal.utils.logger.Logger;
 
+/**
+ * @author Jorge Romero
+ *
+ * @clase MainActivity
+ * @descripcion Actividad principal de la aplicación
+ * @see AppCompatActivity
+ */
 public class MainActivity extends AppCompatActivity {
 
+    /**
+     * Atributos de la clase
+     */
     private NavController navController;
     private final Logger logger = new Logger(MainActivity.class);
 
+    /**
+     * @descripcion Método que se ejecuta cuando se crea la actividad
+     * @param savedInstanceState Bundle que contiene el estado previamente guardado de esta actividad
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -42,6 +50,13 @@ public class MainActivity extends AppCompatActivity {
         menuInferiorNavegacion.setOnItemSelectedListener(this::onNavigationItemSelected);
     }
 
+    /**
+     * @descripcion Método para gestionar la navegación según que elemento del menú inferior de
+     * navegación se seleccione
+     * @param item El elemento del menú inferior de navegación seleccionado
+     * @return true si se ha seleccionado un elemento del menú inferior de navegación,
+     * false en caso contrario
+     */
     private boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
         int idElementoMenuSeleccionado = item.getItemId();
@@ -62,6 +77,9 @@ public class MainActivity extends AppCompatActivity {
         return false;
     }
 
+    /**
+     * @descripcion Método para gestionar la opción de salir de la aplicación
+     */
     private void onSalirMenuItemSelected() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Salir de la app")
