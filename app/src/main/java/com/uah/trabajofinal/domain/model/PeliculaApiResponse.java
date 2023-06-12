@@ -2,6 +2,12 @@ package com.uah.trabajofinal.domain.model;
 
 import androidx.annotation.NonNull;
 
+/**
+ * @author Jorge Romero
+ *
+ * @clase PeliculaApiResponse
+ * @descripcion Clase que representa la respuesta de la API de películas OMDb
+ */
 public class PeliculaApiResponse {
 
     private String Title;
