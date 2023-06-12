@@ -11,14 +11,29 @@ import com.uah.trabajofinal.domain.model.Pelicula;
 import com.google.android.material.imageview.ShapeableImageView;
 import com.uah.trabajofinal.utils.logger.Logger;
 
+/**
+ * @author Jorge Romero
+ *
+ * @clase PeliculaCardViewHolder
+ * @descripcion ViewHolder que se encarga de inflar la vista de cada card fragment de pelicula
+ * @see RecyclerView.ViewHolder
+ */
 public class PeliculaCardViewHolder extends RecyclerView.ViewHolder {
 
+    /**
+     * Atributos, constantes y constructor del ViewHolder
+     */
     private final ShapeableImageView peliculaCardCoverImage;
     private final TextView peliculaCardTitleText, peliculaCardAnioText, peliculaCardDuracionText,
             peliculaCardActorPrincipalText, peliculaCardSinopsisText;
     private final MaterialButton materialButton1, materialButton2;
     private static final Logger logger = new Logger(PeliculaCardViewHolder.class);
 
+    /**
+     * @descripcion Constructor del ViewHolder
+     * @param itemView Vista de cada card fragment de pelicula
+     * @param clickListener Listener para los botones de cada card fragment de pelicula
+     */
     public PeliculaCardViewHolder(View itemView, PeliculaCardListAdapter.OnMaterialButtonClickListener clickListener) {
         super(itemView);
 
@@ -50,6 +65,10 @@ public class PeliculaCardViewHolder extends RecyclerView.ViewHolder {
         });
     }
 
+    /**
+     * @descripcion Metodo para enlazar los datos de una pelicula con su vista correspondiente
+     * @param pelicula Pelicula
+     */
     public void bind(Pelicula pelicula) {
         peliculaCardCoverImage.setImageResource(R.drawable.play_store_512);
         peliculaCardTitleText.setText(pelicula.getTitulo());
