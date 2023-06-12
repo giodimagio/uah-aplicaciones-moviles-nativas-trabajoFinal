@@ -2,8 +2,17 @@ package com.uah.trabajofinal.utils.logger;
 
 import android.util.Log;
 
+/**
+ * @author Jorge Romero
+ *
+ * @clase Logger
+ * @descripcion Clase para gestionar los logs de la aplicación
+ */
 public class Logger {
 
+    /**
+     * Atributos, constantes y constructores de la clase
+     */
     private static final String DEFAULT_TAG = "[MovAffinityUAH]";
     private static boolean isLoggingEnabled = true;
 
