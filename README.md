@@ -1,44 +1,40 @@
 
 <h1 align="center">Máster Universitario en Desarrollo Ágil de Software para la Web</h1>
-<h3 align="center">MovAffinity</h3>
-<h5 align="center">
-    Aplicaciones Móviles (Nativas e Híbridas) - Trabajo Final
-</p>
-<h6 align="center">
-    Universidad de Alcalá
-</h6>
+<h3 align="center">MovAffinity UAH</h3>
+<h5 align="center">Aplicaciones Móviles (Nativas e Híbridas) - Trabajo Final</h5>
+<h6 align="center">Universidad de Alcalá</h6>
 <hr>
 
-<!-- ÍNIDICE -->
+<!-- ÍNDICE -->
 
 <details open="open">
   <summary>Índice</summary>
   <ol>
     <li>
-      <a href="#about-the-project">El proyecto</a>
+      <a href="#el-proyecto">El proyecto</a>
       <ul>
         <li><a href="#built-with">Stack</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Como empezar</a>
+      <a href="#como-empezar">Como empezar</a>
       <ul>
-        <li><a href="#prerequisites">Requisitos previos</a></li>
-        <li><a href="#installation">Instalación</a></li>
+        <li><a href="#requisitos-previos">Requisitos previos</a></li>
+        <li><a href="#instalación">Instalación</a></li>
       </ul>
     </li>
-    <li><a href="#license">Licenciamiento</a></li>
-    <li><a href="#contact">Contacto</a></li>
+    <li><a href="#licenciamiento">Licenciamiento</a></li>
+    <li><a href="#contacto">Contacto</a></li>
   </ol>
 </details>
 
-<!-- EL RPOYECTO -->
+<!-- EL PROYECTO -->
 
 ## El proyecto
 
-![Trabajo Final](./documentation/)
+[Trabajo Final](./documentacion/practica_final_enunciado.pdf)
 
-Demo de la app. PlayStore [Google Play](https://): [MovAffinity](https://)
+Demo de la app. Se adjuntará junto a la entrega un apk instalable. No se sube a GitHub.
 
 ### Stack
 
@@ -46,19 +42,21 @@ En esta sección se listan las tecnologías, frameworks, librerías y otras herr
 
 Tecnologías:
 
-* [Java](https://)
+* [Java SE 11 (Target JDK)](https://docs.oracle.com/en/java/javase/11/docs/api/)
+* [Android 12 (Min SDK)](https://developer.android.com/about/versions/12?hl=es-419)
+* [Android 13 (Target SDK)](https://developer.android.com/about/versions/13?hl=es-419)
 
 Frameworks:
 
-* [](https://)
+* [Material 3 (UI)](https://m3.material.io/)
 
 Otros recursos:
 
-* [Android Studio](https://)
-* [Gradle](https://)
+* [Android Studio](https://developer.android.com/studio)
+* [Gradle](https://gradle.org/)
 * [Git](http://git-scm.com/)
 * [Github](https://github.com/)
-* [Markdown](https://)
+* [Markdown](https://www.markdownguide.org/)
 
 <!-- COMO EMPEZAR -->
 
