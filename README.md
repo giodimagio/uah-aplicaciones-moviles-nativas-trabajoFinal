@@ -13,7 +13,7 @@
     <li>
       <a href="#el-proyecto">El proyecto</a>
       <ul>
-        <li><a href="#built-with">Stack</a></li>
+        <li><a href="#stack">Stack</a></li>
       </ul>
     </li>
     <li>

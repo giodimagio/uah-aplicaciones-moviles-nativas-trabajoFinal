@@ -52,7 +52,7 @@ public class PeliculaCardFragment extends Fragment {
      * @param titulo El título de la película encontrada
      */
     public void mostrarPeliculaEncontrada(String titulo) {
-        peliculaCardTitleText.setText(titulo);
+        //peliculaCardTitleText.setText(titulo);
     }
 
 }

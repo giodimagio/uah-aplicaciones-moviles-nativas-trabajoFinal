@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TrabajoFinal</string>
+    <string name="app_name">MovAffinity UAH</string>
     <string name="main_activity_name">MovAffinity UAH</string>
     <string name="peliculaCardTitleTextPlaceholder">Título de la Película</string>
     <string name="peliculaCardAnioTextPlaceholder">Año de la Película</string>
